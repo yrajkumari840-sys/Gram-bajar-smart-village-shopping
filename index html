@@ -1,0 +1,266 @@
+आपके GramBazaar के लिए मैं एक आधुनिक, मोबाइल-रेस्पॉन्सिव ई-कॉमर्स वेबसाइट का कोड तैयार कर सकता हूँ। इसमें 3D डिजाइन, प्रोडक्ट कार्ट, WhatsApp ऑर्डर और API इंटीग्रेशन शामिल होंगे।
+
+नीचे दिया गया प्रॉम्प्ट आप AI कोडिंग टूल या Google AI Studio में इस्तेमाल कर सकते हैं।
+
+Project Name: GramBazaar – Smart Village Shopping
+
+Act as a senior website developer and UI/UX designer with 15 years of experience in web development, e-commerce, 3D web design, and API integration.
+
+Create a modern, attractive, mobile-responsive, single-page e-commerce website called GramBazaar, designed for Indian village businesses and local customers.
+
+1. Technology
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Three.js for 3D models and animations
+- REST API integration using Fetch API
+- WhatsApp click-to-chat ordering
+- LocalStorage for cart persistence
+
+Deliver a complete, working "index.html" file with HTML, CSS, and JavaScript included.
+
+2. Modern 3D Design
+
+- Create a premium 3D-inspired shopping website.
+- Add an interactive 3D rotating shopping box or shopping basket using Three.js.
+- Use smooth animations and floating product cards.
+- Add attractive hover effects and animated buttons.
+- Use a professional green, white, and orange color theme.
+- Make the 3D section responsive on mobile devices.
+- Display a fallback design if WebGL or Three.js is unavailable.
+
+3. Website Header
+
+Create a responsive navigation bar containing:
+
+- GramBazaar logo
+- Home
+- All Products
+- Categories
+- About Us
+- Contact Us
+- Search bar
+- Shopping cart icon with item count
+- Mobile hamburger menu
+
+4. Homepage
+
+Create an attractive hero section with:
+
+Headline: "गाँव का बाज़ार, अब आपके मोबाइल पर!"
+
+Subheading: "अपने गाँव और आसपास की दुकानों से पसंदीदा सामान आसानी से ऑर्डर करें।"
+
+Buttons:
+
+- अभी खरीदें
+- WhatsApp पर ऑर्डर करें
+
+Include an attractive 3D shopping illustration.
+
+5. Product Categories
+
+Display category cards for:
+
+- किराना सामान
+- कपड़े
+- फल और सब्जियाँ
+- कृषि उत्पाद
+- घरेलू सामान
+- इलेक्ट्रॉनिक्स
+
+Each category should have an icon, image, and clickable category filter.
+
+6. Product Listing
+
+Display products in a responsive grid.
+
+Each product card must include:
+
+- Product image
+- Product name in Hindi
+- Price in Indian rupees
+- Optional original price and discount
+- Quantity selector
+- Add to Cart button
+- Order on WhatsApp button
+
+Load products dynamically from a JavaScript array or REST API.
+
+Include sample products so the website works immediately without an API.
+
+7. Shopping Cart
+
+Implement a functional shopping cart.
+
+Features:
+
+- Add products to cart
+- Increase or decrease quantity
+- Remove products
+- Calculate subtotal and total
+- Display cart item count
+- Save cart data in LocalStorage
+- Show a checkout form
+
+The checkout form should collect:
+
+- Customer name
+- Mobile number
+- Delivery address
+- Optional village or locality
+- Order notes
+
+Validate required fields before submitting the order.
+
+8. WhatsApp Ordering
+
+When the customer clicks Place Order:
+
+1. Validate the checkout form.
+2. Collect customer information.
+3. Collect all product names, quantities, and prices.
+4. Calculate the order total.
+5. Generate a formatted Hindi WhatsApp message.
+6. Open WhatsApp with the complete order message addressed to the seller.
+
+Example message:
+
+नमस्ते GramBazaar!
+
+मुझे निम्नलिखित सामान ऑर्डर करना है।
+
+ग्राहक का नाम: [Customer Name]
+मोबाइल नंबर: [Mobile Number]
+पता: [Delivery Address]
+
+ऑर्डर:
+
+1. चावल – 2 किलो – ₹120
+2. चीनी – 1 किलो – ₹50
+
+कुल राशि: ₹170
+
+कृपया मेरा ऑर्डर कन्फर्म करें।
+
+Use a configurable seller WhatsApp number in international format without the + sign.
+
+Use the WhatsApp click-to-chat URL with properly encoded message text.
+
+Clearly explain that opening WhatsApp does not automatically send the message; the customer must press Send.
+
+9. API Integration
+
+Create a reusable API integration layer.
+
+Requirements:
+
+- Use JavaScript Fetch API.
+- Support GET requests to retrieve products.
+- Support POST requests to submit orders to a backend.
+- Include loading indicators.
+- Handle API errors.
+- Show user-friendly Hindi error messages.
+- Use sample products if the product API is unavailable.
+
+Create configurable settings:
+
+API_BASE_URL
+PRODUCTS_API_ENDPOINT
+ORDERS_API_ENDPOINT
+SELLER_WHATSAPP_NUMBER
+
+Example endpoints:
+
+GET /api/products
+POST /api/orders
+
+Do not invent a working backend. Document the expected API request and response formats.
+
+Keep API configuration separate from UI logic.
+
+Never expose secret API keys in frontend JavaScript. Use a secure backend for private credentials and sensitive operations.
+
+WhatsApp ordering should work independently of the backend API.
+
+10. Search and Filters
+
+Implement:
+
+- Product search
+- Category filtering
+- Price display in INR
+- Sorting by price
+- Responsive product grid
+
+11. Additional Features
+
+- About GramBazaar section
+- Contact section
+- Customer support button
+- Footer with useful links
+- Mobile-friendly checkout
+- Toast notifications
+- Empty-cart message
+- Smooth scrolling
+- SEO-friendly title and description
+- Accessible buttons and form labels
+
+12. Responsive Design
+
+The website must work on:
+
+- Android mobile phones
+- iPhones
+- Tablets
+- Laptops
+- Desktop computers
+
+Use CSS Grid and Flexbox. Ensure there is no horizontal overflow on small screens.
+
+13. Code Quality
+
+- Write clean, well-commented code.
+- Use semantic HTML.
+- Avoid unnecessary dependencies.
+- Do not use fake API responses as real server data.
+- Do not require a paid API just to run the demo.
+- Ensure buttons and cart functionality actually work.
+- Include basic input validation.
+- Handle network failures gracefully.
+
+14. Expected Deliverables
+
+Provide:
+
+1. Complete "index.html" code.
+2. Instructions to run the website.
+3. Instructions to configure the seller's WhatsApp number.
+4. Instructions to connect a real product API.
+5. Example product API JSON response.
+6. Example order POST request.
+7. Instructions for deploying the website online.
+
+Final Goal: Build a beautiful, fast, 3D-inspired, mobile-responsive GramBazaar shopping website that works as a demo immediately and can later connect to a real e-commerce backend.वेबसाइट में API कैसे काम करेगी?
+
+API	काम
+
+Products API	सामान और उसकी कीमत दिखाना
+Orders API	ऑर्डर की जानकारी सर्वर पर भेजना
+WhatsApp	दुकानदार को ऑर्डर का संदेश भेजना
+Three.js	वेबसाइट में 3D मॉडल और एनिमेशन दिखाना
+LocalStorage	कार्ट में जोड़ा गया सामान सेव रखना
+
+
+ध्यान दें: केवल HTML से वेबसाइट का फ्रंटएंड बनाया जा सकता है। वास्तविक ऑर्डर सर्वर पर सेव करने, स्टॉक मैनेज करने और भुगतान जैसी सुविधाओं के लिए बैकएंड की जरूरत हो सकती है।
+
+अब आप बताइए, GramBazaar का कौन-सा मॉडल चाहिए?
+
+1. केवल HTML + CSS + JavaScript वाली वेबसाइट, जिसमें WhatsApp ऑर्डर हो।
+
+2. 3D मॉडल, API, कार्ट और WhatsApp ऑर्डर वाली पूरी वेबसाइट।
+
+3. पूरी ई-कॉमर्स वेबसाइट, जिसमें एडमिन पैनल, प्रोडक्ट मैनेजमेंट, डेटाबेस और ऑनलाइन पेमेंट भी हो।
+
+मेरी सलाह: विकल्प 2 से शुरुआत करें। इसमें पहले वेबसाइट तैयार होगी और बाद में असली बैकएंड जोड़ा जा सकेगा।
